@@ -36,3 +36,140 @@
     transform: rotate(360deg);
   }
 }
+.todos-container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.todo-item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+ 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-13/cur1163.cur'), auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-box {
+  background-color: #6c757d;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(173, 104, 255, 0.6);
+  width: 90%;
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+input, button {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input {
+  flex-grow: 1;
+  background-color: #1e1e2f;
+  color: white;
+  padding-left: 15px;
+}
+
+button {
+  background-color: #6f42c1;
+  color: white;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #8253d4;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292c3e;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.todo-item.done {
+  background-color: #28a745;
+  animation: pop 0.4s ease forwards;
+  position: relative;
+}
+
+.todo-item.done::after {
+  content: " 💖";
+  font-size: 1.2rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+footer {
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+}
+
+
+
+
+
+
+
+

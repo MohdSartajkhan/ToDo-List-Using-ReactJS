@@ -1,0 +1,136 @@
+.todo-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #8d8d9e;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #6f42c1;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #00ffff;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #292c3e;
+    color: #fff;
+  }
+  
+  .todo-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #2f314a;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .add-btn {
+    background: #6f42c1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    background: #8a5cf7;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    background-color: #33344a;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .todo-item.done {
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.02);
+  }
+  
+  .todo-actions button {
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .tick-btn {
+    background-color: #00c853;
+    color: white;
+  }
+  
+  .tick-btn:hover {
+    background-color: #00e676;
+  }
+  
+  .del-btn {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .del-btn:hover {
+    background-color: #ef5350;
+  }
+  
+  .done-heart {
+    margin-left: 15px;
+    font-size: 18px;
+    animation: pulse 1.2s ease infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      color: #fff;
+    }
+    50% {
+      transform: scale(1.1);
+      color: #ff69b4;
+    }
+    100% {
+      transform: scale(1);
+      color: #fff;
+    }
+  }
+  
+  
+  * {
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-13/cur1132.cur"), auto;
+  }
+  
