@@ -1,0 +1,14 @@
+.todo-box-wrapper {
+    transform: scale(0.7);
+    transition: transform 0.5s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .todo-box-wrapper.zoom-in {
+    transform: scale(1);
+    opacity: 1;
+    height: auto;
+  }
+  

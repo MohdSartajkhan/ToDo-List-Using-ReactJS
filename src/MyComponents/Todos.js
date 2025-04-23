@@ -71,12 +71,23 @@ function Todos() {
                   ✅
                 </button>
               )}
+
               <button
                 className="del-btn"
                 onClick={() => deleteTodo(index)}
               >
                 ❌
               </button>
+              <button
+                className="clear-all-btn"
+                onClick={() => {
+                  localStorage.removeItem("todos");
+                  window.location.reload();
+                }}
+              >
+                🗑️ Clear All Tasks
+              </button>
+
               {todo.done && <span className="done-heart">💖 Done!</span>}
             </div>
           </li>
