@@ -4,11 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 export default function Header() {
   const navigate = useNavigate();
 
-  const resetTodos = () => {
-    localStorage.removeItem("todos");
-    navigate(0); // Refresh
-  };
-
   return (
     <nav className="navbar">
       <div className="logo">ToDoS</div>
